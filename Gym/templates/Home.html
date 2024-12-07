@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!--css-->
+{% block styles %}
+        <link rel="stylesheet" href="{% static 'CSS/Home.css' %}">
+{% endblock %}
+
+<!--main content-->
+{% block content %}
+
+{% include 'carousel.html' %}
+
+    <div class="container text-center">
+        <h1>Welcome to the Gym!</h1>
+        <p>Health is Wealth.</p>
+    </div>
+
+    <!--card-->
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Join</h5>
+            <p class="card-text">Become a member of the gym.</p>
+
+            <button
+            type="button"
+            class="btn btn-primary home-button"
+            data-mdb-ripple-init
+            onclick="window.location.href='{% url 'Contact' %}';"
+            >
+                Join
+            </button>
+        </div>
+    </div>
+
+{% endblock %}
+
+<!--scripts-->
+{% block scripts %}
+    <script src="{% static 'JS/Home.js' %}" defer></script>
+{% endblock %}

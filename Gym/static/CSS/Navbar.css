@@ -1,0 +1,53 @@
+.navbar-nav .nav-link
+    {
+        position: relative;
+        text-decoration: none; /* Remove default underline */
+    }
+
+.navbar-nav .nav-link::after
+    {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        width: 0;
+        height: 2px;
+        background-color: #3b3b3b; /* Underline */
+        transition: width 0.3s ease; /* Smooth transition effect */
+    }
+
+.navbar-nav .nav-link:hover::after
+    {
+    width: 100%; /* Expand the underline to full width on hover */
+    }
+
+.container-fluid
+    {
+        content: "";
+        position: relative;
+        left: 1000px;
+        font-family: montserrat;
+        font-size: 18px;
+    }
+
+.navbar-brand
+    {
+        content: "";
+        position: relative;
+        right: 700px;
+    }
+
+.navbar-button
+    {
+        background-image: linear-gradient(to bottom, #141E30, #234C7B); /* Gradient */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+.navbar-button:hover
+    {
+        background: linear-gradient(to right, #feb47b, #ff7e5f);
+    }

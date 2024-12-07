@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!--css-->
+{% block styles %}
+{% endblock %}
+
+<!--main content-->
+{% block content %}
+    <!--image-->
+    <img src="https://www.thegym.in/img/faq.jpg" style="width: 100vw; height: 20vw; object-fit: cover;" alt="Full Page Image">
+
+    <div class="left-aligned-text">
+        <h1>FAQ!</h1>
+            <table class="table align-middle">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Enquiry</th>
+                  <th scope="col">Availability</th>
+                  <th scope="col">Note</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Parking</td>
+                  <td>YES</td>
+                  <td>Limited</td>
+                </tr>
+                <tr class="align-bottom">
+                  <th scope="row">2</th>
+                  <td>Equipment maintenance</td>
+                  <td>Every Monday</td>
+                  <td>Cleaned and checked</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td >Bathroom</td>
+                  <td>Available</td>
+                  <td class="align-top">Cleaned everyday</td>
+                </tr>
+              </tbody>
+            </table>
+    </div>
+
+{% endblock %}
